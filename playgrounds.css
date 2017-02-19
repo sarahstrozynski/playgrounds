@@ -5,7 +5,7 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
   color: black; 
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica", sans-serif;
   font-size: 28px;
   font-weight: 100;
   white-space: nowrap
@@ -13,7 +13,7 @@ body{
 
 
 .greyback{
-	background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 p{
@@ -21,12 +21,12 @@ p{
 }
 
 .centered{
-	display: block;
-	margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .typewriter{
-	text-align: center;
+  text-align: center;
 }
 
 .overlay {
@@ -39,21 +39,35 @@ p{
 }
 
 
+.videoposition{
+  display: inline-block;
+/*  width: 30%;*/
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.cursor{
+  cursor: pointer;
+  
+}
+
+
+
 p.emphasize{
-	font-weight:500;
+  font-weight:500;
 }
 
 p.discreet{
-	font-size: 16px;
-	font-weight: 100;
-	margin: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 10px;
 }
 
 a{
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover{
-	text-decoration: underline;
+  text-decoration: underline;
 }

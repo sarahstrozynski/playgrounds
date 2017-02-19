@@ -19,15 +19,41 @@
 		<p>Well, I tried this last week.</p>
 		<p>And I even dared to look up from my phone from time to time.</p>	
 	</section>
-	
 
     <section id="step2">
-		<section class="greyback"> 
+		<section class="greyback centered videoposition"> 
 			<br/>
-			<p class="emphasize">I invite you to explore my map below.</p> 
-			<p>So you can see what I have seen.</p>
-			<div class="overlay centered" onClick="style.pointerEvents='none'"></div>
-			<iframe class="centered" src="https://www.google.com/maps/d/embed?mid=1VkZFhKjOh4i9vKsRkjSBVaoqtnQ" width="940" height="580"></iframe>	
+			<p class="emphasize">I invite you to see for yourself.</p> 
+			<p>Simply mouse over the situations below.</p>
+			
+			<div>
+			
+ 			<video class="cursor" width="320" height="320" loop onmouseout="this.pause()" onmouseover="this.play()">
+  				<source src="http://playground.eca.ed.ac.uk/~s1670810/vines/happy.mp4" type="video/mp4">
+			</video>
+			
+ 			<video class="" width="320" height="320" loop onmouseout="this.pause()" onmouseover="this.play()">
+  				<source src="http://playground.eca.ed.ac.uk/~s1670810/vines/strongwind.mp4" type="video/mp4">
+			</video>	
+				
+			<video class="" width="320" height="320" loop onmouseout="this.pause()" onmouseover="this.play()">
+  				<source src="http://playground.eca.ed.ac.uk/~s1670810/vines/love.mp4" type="video/mp4">
+			</video>
+					
+ 			<video class="" width="320" height="320" loop onmouseout="this.pause()" onmouseover="this.play()">
+  				<source src="http://playground.eca.ed.ac.uk/~s1670810/vines/squirrel.mp4" type="video/mp4">
+			</video>
+			
+ 			<video class="" width="320" height="320" loop onmouseout="this.pause()" onmouseover="this.play()">
+  				<source src="http://playground.eca.ed.ac.uk/~s1670810/vines/softwind.mp4" type="video/mp4">
+			</video>	
+				
+			<video class="" width="320" height="320" loop onmouseout="this.pause()" onmouseover="this.play()">
+  				<source src="http://playground.eca.ed.ac.uk/~s1670810/vines/window.mp4" type="video/mp4">
+			</video>
+			
+			 </div>
+				
 			<br/>
 			<br/>
 			<br/>
@@ -38,13 +64,14 @@
 			<p class="emphasize">Are you ready for more?</p>
 			<p>Open your eyes, heart and mind.</p>
 			<p>And embrace, feel and think the environment.</p>
-			<iframe class="centered" width="940" height="580" src="https://www.youtube.com/embed/8orMfZ5ceLE" frameborder="0"></iframe>
-			<p class="discreet"><a href="http://www.hazelturnbull.com/">Music by Hazel Turnbull &hearts;</a></p>
+			<div class="overlay centered" onClick="style.pointerEvents='none'"></div>
+			<iframe class="centered" src="https://www.google.com/maps/d/embed?mid=1VkZFhKjOh4i9vKsRkjSBVaoqtnQ" width="940" height="580"></iframe>
 		</section>
 
 		<section> 
 			<br/>
 			<br/>
+			<p class="discreet"><a href="http://www.hazelturnbull.com/">Music by Hazel Turnbull &hearts;</a></p>
 			<p class="discreet footer">copyright | Sarah Strozynski 2017</p>
 		</section>
 	</section>
@@ -58,7 +85,7 @@ $(document).ready(function() {
 					document.getElementById("step2").style.visibility = "hidden";
     $(".typewriter").typeIt({
         //strings:["Hello, you.", "I have a question for you.", "When was the last time you went for a walk?", ],
-        speed: 70,
+        speed: 20,
 		callback: function() {
 			setTimeout(function() {
 				document.getElementById("step2").style.visibility = "visible";
