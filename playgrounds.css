@@ -1,19 +1,24 @@
 @charset "UTF-8";
 
-body{
-  background: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: black; 
+body {
   font-family: "Open Sans", "Helvetica", sans-serif;
   font-size: 28px;
   font-weight: 100;
-  white-space: nowrap
 } 
 
+.box {
+  padding: 25px 10px;
+}
 
-.greyback{
+.greyback {
+   /* This border prevents margin-collapsing to happen between two text elements. */
+   /* Learn more here: http://eloux.com/css-prevent-margin-collapse/ */
+  border: 1px solid #F2F2F2;
   background-color: #F2F2F2;
+}
+
+.greyback *:last-child {
+  margin-bottom: 1em;
 }
 
 p{
@@ -21,37 +26,38 @@ p{
 }
 
 .centered{
-  display: block;
-  margin: 0 auto;
+  text-align: center;
 }
 
-.typewriter{
-  text-align: center;
+.derive-map {
+  max-width: 900px;
+}
+
+.vine-container {
+  margin-left: -20px;
+}
+
+.vine-container > video {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.vine-container > video:last-child {
+  margin-bottom: 0;
 }
 
 .overlay {
    background:transparent; 
    position:relative; 
-   width:940px;
+   width:100%;
    height:580px; /* your iframe height */
    top:580px;  /* your iframe height */
    margin-top:-580px;  /* your iframe height */
 }
 
-
-.videoposition{
-  display: inline-block;
-/*  width: 30%;*/
-  max-height: 100%;
-  max-width: 100%;
-}
-
 .cursor{
   cursor: pointer;
-  
 }
-
-
 
 p.emphasize{
   font-weight:500;
