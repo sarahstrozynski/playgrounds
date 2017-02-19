@@ -17,7 +17,7 @@ body {
   background-color: #F2F2F2;
 }
 
-.greyback *:last-child {
+.greyback > *:last-child {
   margin-bottom: 1em;
 }
 
@@ -40,10 +40,6 @@ p{
 .vine-container > video {
   margin-left: 20px;
   margin-bottom: 20px;
-}
-
-.vine-container > video:last-child {
-  margin-bottom: 0;
 }
 
 .overlay {
