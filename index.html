@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>playgrounds</title>
+<link href="playgrounds.css" rel="stylesheet" type="text/css">
+<link href="normalize.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
+</head>
+
+<body>
+	<section class="typewriter"> 
+		<p>Hello, you.</p> 
+		<p>I have a question for you.</p>
+		<p>When was the last time you went for a walk?</p>
+		<p>Without a specific goal. Just simply strolled around?</p>
+		<p>Right... You can't remember.</p>
+		<p>Well, I tried this last week.</p>
+		<p>And I even dared to look up from my phone from time to time.</p>	
+	</section>
+	
+
+    <section id="step2">
+		<section class="greyback"> 
+			<br/>
+			<p class="emphasize">I invite you to explore my map below.</p> 
+			<p>So you can see what I have seen.</p>
+			<div class="overlay centered" onClick="style.pointerEvents='none'"></div>
+			<iframe class="centered" src="https://www.google.com/maps/d/embed?mid=1VkZFhKjOh4i9vKsRkjSBVaoqtnQ" width="940" height="580"></iframe>	
+			<br/>
+			<br/>
+			<br/>
+		</section>
+
+		<section> 
+			<br/>
+			<p class="emphasize">Are you ready for more?</p>
+			<p>Open your eyes, heart and mind.</p>
+			<p>And embrace, feel and think the environment.</p>
+			<iframe class="centered" width="940" height="580" src="https://www.youtube.com/embed/8orMfZ5ceLE" frameborder="0"></iframe>
+			<p class="discreet"><a href="http://www.hazelturnbull.com/">Music by Hazel Turnbull &hearts;</a></p>
+		</section>
+
+		<section> 
+			<br/>
+			<br/>
+			<p class="discreet footer">copyright | Sarah Strozynski 2017</p>
+		</section>
+	</section>
+
+
+
+
+
+<script>
+$(document).ready(function() {
+					document.getElementById("step2").style.visibility = "hidden";
+    $(".typewriter").typeIt({
+        //strings:["Hello, you.", "I have a question for you.", "When was the last time you went for a walk?", ],
+        speed: 70,
+		callback: function() {
+			setTimeout(function() {
+				document.getElementById("step2").style.visibility = "visible";
+			}, 2000);
+		}
+      });
+});
+</script>
+</body>
+</html>
