@@ -19,7 +19,7 @@
 		<p>Without a specific goal. Just simply strolled around?</p>
 		<p>Right... You can't remember.</p>
 		<p>Well, I tried this last week.</p>
-		<p>I dared to open my eyes, heart and mind...</p>
+		<p>I opened my eyes, heart and mind...</p>
 		<p>...and I found situations of true poetry.</p>	
 	</section>
 
@@ -164,8 +164,9 @@
 
 		<section class="box centered"> 
 			<p class="emphasize">Why don't you stroll around some time?</p>
-			<p>And find your own poetry of the city?</p>
-			<p>The map below provides you with suggestions for places.</p>
+			<p>And discover your own personal situations of poetry?</p>
+			<p class="explain">The black pins in the map below provide you with suggestions for slow places worth discovering.</p>
+			<p class="explain">The purple marker represent my situations from above.</p>
 			<div class="overlay" onClick="style.pointerEvents='none'"></div>
 			<iframe class="derive-map" src="https://www.google.com/maps/d/embed?mid=1VkZFhKjOh4i9vKsRkjSBVaoqtnQ" width="100%" height="580"></iframe>
 		</section>
@@ -184,7 +185,7 @@
 $(document).ready(function() {
 	document.getElementById("step2").style.visibility = "hidden";
     $(".js-typewriter").typeIt({
-        speed: 20,
+        speed: 60,
         cursor: false,
 		callback: function() {
 			setTimeout(function() {
