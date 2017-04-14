@@ -11,7 +11,7 @@ body {
 }
 
 .greyback {
-   /* This border prevents margin-collapsing to happen between two text elements. */
+   /* This border prevents margin-collapsing to happen between two text elements.#252525 */
    /* Learn more here: http://eloux.com/css-prevent-margin-collapse/ */
   border: 1px solid #F2F2F2;
   background-color: #F2F2F2;
@@ -25,7 +25,7 @@ p{
   text-align: center;
 }
 
-.centered{
+.centered {
   text-align: center;
 }
 
@@ -40,7 +40,17 @@ p{
 .vine-container > video {
   margin-left: 20px;
   margin-bottom: 20px;
+  opacity: 0.5;
+/*  -webkit-filter: contrast(3);
+  filter: contrast(3);*/
+  border: 2px solid white;
 }
+
+.vine-container > video:hover {
+  opacity: 1;
+  filter: none;
+}
+
 
 /*prevents movement on map element by scrolling down*/
 .overlay {
@@ -70,4 +80,8 @@ p.discreet{
   font-size: 16px;
   font-weight: 100;
   margin: 10px;
+}
+
+.text-white {
+  color: white;
 }
