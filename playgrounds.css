@@ -29,10 +29,6 @@ p{
   text-align: center;
 }
 
-.derive-map {
-  max-width: 900px;
-}
-
 .vine-container {
   margin-left: -20px;
 }
@@ -40,11 +36,11 @@ p{
 .vine-container > video {
   margin-left: 20px;
   margin-bottom: 20px;
-  opacity: 0.5;
+  opacity: 0.3;
   border: 2px solid white;
 /* experiments with filters for more visual attraction*/
-/*  -webkit-filter: contrast(3);
-  filter: contrast(3);*/
+  -webkit-filter: contrast(3);
+  filter: contrast(3);
 }
 
 .vine-container > video:hover {
@@ -87,6 +83,17 @@ p.about{
   line-height: 32px;
   width: 60%;
   margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.iframe {
+  max-width: 900px;
+  margin-bottom: 25px;
+}
+
+.about-video {
+  max-width: 65%;
+  margin-bottom: 25px;
 }
 
 .text-white {
